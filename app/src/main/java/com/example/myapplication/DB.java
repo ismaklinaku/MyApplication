@@ -1,6 +1,6 @@
 package com.example.myapplication;
 
-import static java.util.Currency.getInstance;
+
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -88,7 +88,8 @@ public class DB extends SQLiteOpenHelper {
     public Boolean userExists(String email) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("Select * from users where email=?", new String[]{email});
-        boolean exists = cursor.getCount() > 0; cursor.close();
+        boolean exists = cursor.getCount() > 0;
+        cursor.close();
         return exists;
     }
 

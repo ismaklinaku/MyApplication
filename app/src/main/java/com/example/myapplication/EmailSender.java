@@ -16,7 +16,7 @@ import javax.mail.internet.MimeMessage;
 
 public class EmailSender {
 
-    private static String adminEmail = "zshabani392@gmail.com";
+    private static String adminEmail = "ismaklinaku27@gmail.com";
     private static String AppPassword = "uthv qjso nguy dpnf";
     private static long otpGenerationTime;
 
