@@ -33,7 +33,7 @@ public class ResetPassword extends AppCompatActivity {
 
         changePassword.setOnClickListener(view->{
             String reset1 = resetPass1.getText().toString().trim();
-            String reset2 = resetPass1.getText().toString().trim();
+            String reset2 = resetPass2.getText().toString().trim();
             if(Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@#$%^&+=]).{6,20}$").matcher(reset1).matches())
             {
                 if(reset1.equals(reset2)){
